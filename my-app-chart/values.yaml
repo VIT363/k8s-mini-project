@@ -1,0 +1,12 @@
+replicaCount: 3
+
+image:
+  repository: ghcr.io/vit363/k8s-mini-project
+  tag: "latest"
+
+service:
+  type: NodePort
+  port: 8080
+  nodePort: 30080
+
+appMode: "production"

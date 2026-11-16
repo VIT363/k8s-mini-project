@@ -15,6 +15,6 @@ public class TimeController {
     @GetMapping("/time")
     public String getTime() {
         log.info("Time requested");
-        return "Current time: " + LocalDateTime.now();
+        return "Current time (v2): " + LocalDateTime.now();
     }
 }
